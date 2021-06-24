@@ -1,5 +1,22 @@
 
 // GetInteger()
+public static int GetInteger()
+        {
+            string input = "";
+            int output = 0;
+            try
+            {
+                input = Console.ReadLine();
+                output = int.Parse(input);
+            }
+            catch(FormatException)
+            {
+                Console.WriteLine("That was not a valid input.");                
+            }
+            return output;
+        }
+
+// GetInteger(int maxChoices)
 public static int GetInteger(int maxChoices)
         {
             string input = "";
