@@ -10,11 +10,11 @@ public static bool GetContinue()
 {
     Console.WriteLine("Would you like to roll again? Y/N");
     string input = Console.ReadLine();
-    if (input.ToLower() == "y")
+    if (input.Trim().ToLower() == "y")
     {
         return true;
     }
-    else if (input.ToLower() == "n")
+    else if (input.Trim().ToLower() == "n")
     {
         return false;
     }
